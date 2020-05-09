@@ -1,0 +1,16 @@
+- thumbnail: ''
+  url: https://www.github.com/nathanpickard
+  icon: <i class="fas fa-graduation-cap"></i>
+  title: 'Check out my GitHub page'
+  date: May 8, 2020
+  summary: My GitHub page hosts most of my code repositories
+  tags: angular,applications,javascript
+
+- thumbnail: ''
+  url: https://www.twitter.com/nathanpickard
+  icon: <i class="fas fa-graduation-cap"></i>
+  title: 'My Twitter profile'
+  date: May 7, 2020
+  summary: 'Head over to my Twitter page to see my latest tweets'
+  tags: javascript,web developer,twitter
+
