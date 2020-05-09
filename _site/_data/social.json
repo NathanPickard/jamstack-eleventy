@@ -1,0 +1,17 @@
+[
+  {
+    "name": "github",
+    "iconClass": "fab fa-github",
+    "url": "https://github.com/nathanpickard"
+  },
+  {
+    "name": "linkedin",
+    "iconClass": "fab fa-linkedin",
+    "url": "https://linkedin.com/in/nathanpickard"
+  },
+  {
+    "name": "twitter",
+    "iconClass": "fab fa-twitter",
+    "url": "https://twitter.com/nathanpickard"
+  }
+]
