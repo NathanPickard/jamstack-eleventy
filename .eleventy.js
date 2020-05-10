@@ -14,17 +14,23 @@ module.exports = function (eleventyConfig) {
     return `<a class="badge badge-secondary mr-2" href="/clients/${name}">${name}</a>`
   })
 
-  eleventyConfig.addPairedShortcode('pairedClient', function(data, name) {
+  eleventyConfig.addPairedShortcode('pairedClient', function (data, name) {
     return `${data} <a class="badge badge-secondary" href="/clients/${name}">${name}</a>`
   })
 
   eleventyConfig.addFilter('simpleDate', dateObj => {
-    return DateTime.fromJSDate(dateObj, { zone: 'utc'}).toFormat('LLL dd, yyyy')
+    return DateTime.fromJSDate(dateObj, { zone: 'utc' }).toFormat('LLL dd, yyyy')
   })
 
   eleventyConfig.addFilter('courseDate', dateObj => {
     return DateTime.fromFormat(dateObj, 'LLL d, yyyy').toFormat('yyyy-LL-dd')
   })
+
+  eleventyConfig.addCollection('articles', function (collection) {
+    return collection.getFilteredByGlob('_site/posts/*.md').reverse();
+  })
+
+  eleventyConfig.addFilter('limit', (array, qty) => (qty < 0 ? array.slice(qty) : array.slice(0, qty)))
 
   return {
     markdownTemplateEngine: 'njk',
