@@ -13,7 +13,7 @@ layout: page
       <img src="{{ course.thumbnail | safe }}" alt="{{ course.title | safe }} image" class="card-img-top">
       <div class="card-body">
         <h5 class="card-title my-0"></h5>
-        <time class="item-date small d-block text-muted mb-2" datetime="{{ course.date | safe }}">{{ course.date | safe }}</time>
+        <time class="item-date small d-block text-muted mb-2" datetime="{{ course.date | safe }}">{{ course.date | courseDate }}</time>
         <p class="card-text"></p>
         <a href="{{ course.url | url }}" class="btn btn-secondary stretched-link" target="_blank">{{ course.title | safe }}</a>
       </div>
