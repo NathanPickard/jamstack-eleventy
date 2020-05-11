@@ -8,18 +8,19 @@ layout: page
 ---
 
 <h1 class="mt-0">{{client.name}}</h1>
-<p>{{client.title}}, <span class="font-weight-bold text-secondary">{{client.company}}</span></p>
+<p>{{client.title}}, <span class="font-weight-bold text-secondary">{{client.company}}</span>
+</p>
 
 <img src="{{client.profile_photo}}" class="w-50 d-block mb-3" alt="{{client.name}}">
 
 <h2 class="mb-0">Friends</h2>
 
 <p class="mt-1"> 
-{% for friend in client.friends %}
-{% pairedClient friend.name %}
-<i class="fas fa-heart text-danger mr-1"></i>
-{% endpairedClient %}
-{% endfor %}
+  {% for friend in client.friends %}
+  {% pairedClient friend.name %}
+  <i class="fas fa-heart text-danger mr-1"></i>
+  {% endpairedClient %}
+  {% endfor %}
 </p>
 
 <h2 class="mb-0">Posts</h2>

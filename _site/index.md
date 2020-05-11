@@ -25,7 +25,7 @@ This project is built with the JAMStack and eleventy
   <div class="main-content col-lg-9">
     <header class="mb-4">
       <h4 class="text-secondary mt-2 mb-0">Latest Posts</h4>
-      <div class="small">&raquo; <a class="text-secondary" href="/posts">more posts</a></div>
+      <div class="small">&raquo; <a class="text-secondary" href="/posts/0">more posts</a></div>
     </header>
     <div class="row">
       <div class="col">
