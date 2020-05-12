@@ -1,6 +1,9 @@
 ---
 title: Personal Links
 layout: page
+eleventyNavigation:
+  key: courses
+  parent: main
 ---
 
 # {{title}}
