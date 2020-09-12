@@ -12,6 +12,6 @@
     "@11ty/eleventy-navigation": "^0.1.5",
     "js-yaml": "^3.13.1",
     "luxon": "^1.24.1",
-    "node-fetch": "^2.6.0"
+    "node-fetch": "^2.6.1"
   }
 }
